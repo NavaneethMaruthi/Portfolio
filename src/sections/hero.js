@@ -30,14 +30,14 @@
     .join('');
 
   /* ── Build photo (placeholder until real photo added) ── */
-  const photoHTML = `
-    <div class="photo-wrap" id="hero-photo">
-      <img
-        src="${personal.photo}"
-        alt="Photo of ${personal.name}"
-        onerror="this.style.display='none'; document.getElementById('hero-photo').innerHTML='👤';"
-      />
-    </div>`;
+const photoHTML = `
+  <div class="photo-wrap" id="hero-photo">
+    <img
+      src="${personal.photo}"
+      alt="Photo of ${personal.name}"
+      onerror="this.style.display='none'; document.getElementById('hero-photo').innerHTML='👤';"
+    />
+  </div>`;
 
   /* ── Full hero HTML ── */
   section.innerHTML = `
@@ -46,8 +46,6 @@
 
         <!-- LEFT: Text content -->
         <div class="hero-left">
-          
-
           <h1 class="hero-title">
             ${hero.intro}
             <span class="highlight">${hero.highlight}</span>
@@ -58,12 +56,12 @@
           <div class="hero-chips">${chipsHTML}</div>
 
           <div class="hero-btns">
-  <a href="#projects" class="btn-primary">View My Work</a>
-  <a href="#contact" class="btn-secondary">Let's Connect</a>
-  <a href="${personal.resume}" download class="btn-resume">
-    <i class="fa-solid fa-download"></i> Resume
-  </a>
-</div>
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a href="#contact"  class="btn-secondary">Let's Connect</a>
+            <a href="${personal.resume}" download class="btn-resume">
+              <i class="fa-solid fa-download"></i> Resume
+            </a>
+          </div>
         </div>
 
         <!-- RIGHT: Info card -->
@@ -83,6 +81,15 @@
         </div>
 
       </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-arrow">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+
     </div>
   `;
 })();

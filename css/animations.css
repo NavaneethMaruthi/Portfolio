@@ -315,3 +315,9 @@
     animation: none;
   }
 }
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+  }
+}

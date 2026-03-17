@@ -21,7 +21,7 @@ const RESUME_DATA = {
     photo: 'assets/img/profile.jpg',
     linkedin: 'https://www.linkedin.com/in/navaneethm32',
     github: 'https://github.com/NavaneethMaruthi',
-    resume: 'assets/Navaneeth_Maruthi_Resume.pdf',
+    resume: 'assets/Navaneeth_Maruthi.pdf',
     available: true,
   },
 
@@ -29,8 +29,7 @@ const RESUME_DATA = {
   hero: {
     intro: 'Hi, I\'m',
     highlight: 'Navaneeth Maruthi',
-    subtitle:
-      'Software & Data Engineer with <strong>2+ years</strong> shipping production-grade web apps and data pipelines at Cognizant. Proven ability to own features end-to-end — React frontend to Node.js backend to cloud-deployed infrastructure on AWS. Experienced in <strong>high-throughput ETL</strong> (Spark, Snowflake), <strong>serverless distributed systems</strong> (SNS, SQS, Lambda), and <strong>modern full-stack development</strong> (REST APIs, JWT, MongoDB).',
+    subtitle: 'Software & Data Engineer with <strong>2+ years</strong> shipping production-grade web apps and data pipelines at Cognizant. Full-stack to cloud infrastructure — React, Node.js, Spark ETL, and serverless AWS architectures.',
     chips: [
       { label: 'Apache Spark',  type: 'purple' },
       { label: 'Snowflake',     type: 'purple' },
@@ -77,7 +76,7 @@ const RESUME_DATA = {
       },
       {
         category: 'DevOps & Tools',
-        tags: ['Docker', 'Kubernetes', 'CI/CD', 'Git', 'Maven', 'Agile/Scrum', 'Claude Code'],
+        tags: ['Docker', 'Kubernetes', 'CI/CD', 'Git', 'Maven', 'Agile/Scrum'],
       },
     ],
     highlights: [
@@ -92,17 +91,12 @@ const RESUME_DATA = {
         desc: 'Built Spark ETL pipelines processing multi-year datasets, led 100+ code reviews, and shipped Angular + REST API features for enterprise clients.',
       },
       {
-        icon: '🔁',
-        title: 'Full-Stack ↔ Data Bridge',
-        desc: 'Rare ability to own features across the entire stack — React UIs, Node.js APIs, Spark jobs, and cloud infrastructure — without handing off.',
-      },
-      {
         icon: '🧠',
         title: 'ML & Algorithms',
         desc: 'Built ML models (Random Forest, KNN, Neural Networks) achieving 98.25% accuracy. Implemented Apriori, hierarchical clustering, and gradient descent from scratch.',
       },
       {
-        icon: '🏆',
+        icon: '📜',
         title: 'JPMorgan Chase Software Engineering Simulation',
         desc: 'Completed Forage simulation covering financial software engineering practices — Feb 2026.',
       },
@@ -139,53 +133,30 @@ const RESUME_DATA = {
       ],
       tech: ['Spring Boot', 'Java', 'Angular', 'Unit Testing'],
     },
-    {
-      company: 'Northeastern University',
-      role: 'MS in Computer Science',
-      location: 'Boston, MA',
-      period: 'Expected May 2027',
-      dotStyle: 'red',
-      bullets: [
-        'Graduate-level coursework in <strong>Algorithms, Database Management Systems, Web Development, Building Scalable Distributed Systems, Programming Design Paradigm, Machine Learning, Data Mining Techniques</strong>.',
-        'Building projects across ML, data engineering, and full-stack web apps to round out industry experience.',
-      ],
-      tech: [],
-    },
-    {
-      company: 'Visvesvaraya Technological University',
-      role: 'BE in Computer Science and Engineering',
-      location: 'Bangalore, India',
-      period: 'May 2018 – July 2022',
-      dotStyle: 'red',
-      bullets: [
-        'Bachelor\'s degree in Computer Science with focus on <strong>data structures, algorithms, and software engineering</strong>.',
-      ],
-      tech: [],
-    },
   ],
 
   /* ── PROJECTS ── */
   projects: [
     {
-      icon: '🎯',
-      title: 'Alignify',
-      badge: '✦ Live & Deployed',
-      desc: 'Full-stack goal-planning application enabling 50+ users to convert long-term goals into structured daily and weekly action plans. Features JWT authentication, protected routes, persistent MongoDB storage, and <strong>WCAG-compliant accessible design</strong> validated via Lighthouse audits. Containerized with Docker and deployed on Render.',
-      tech: ['React.js', 'Node.js', 'Express', 'MongoDB Atlas', 'JWT', 'Docker', 'Render'],
-      links: [
-        { label: '🔗 Live', url: 'https://alignify-6va4.onrender.com' },
-      ],
-    },
+  icon: '🎯',
+  title: 'Alignify',
+  badge: '✦ Live & Deployed',
+  desc: 'Designed and shipped a <strong>product-focused goal-planning app</strong> with emphasis on UX and accessibility. Conducted usability studies, resolved Lighthouse contrast failures, and achieved <strong>WCAG-compliant design</strong> across all components. Secured with JWT auth, protected routes, and persistent MongoDB storage. Containerized with Docker and live on Render.',
+  tech: ['React.js', 'Node.js', 'Express', 'MongoDB Atlas', 'JWT', 'Docker', 'Render'],
+  links: [
+    { label: '🔗 Live', url: 'https://alignify-6va4.onrender.com' },
+  ],
+},
     {
-      icon: '💼',
-      title: 'FreelanceFlow',
-      badge: '✦ Full Stack SPA',
-      desc: 'Full-stack SPA supporting 50+ users, 300+ projects, and 700+ timesheet entries. Designed a normalized 4-collection MongoDB schema and connected the entire frontend to backend via REST APIs with JWT auth and real-time notifications.',
-      tech: ['JavaScript ES6', 'Node.js', 'Express', 'MongoDB', 'REST APIs', 'JWT'],
-      links: [
-        { label: '⌥ GitHub', url: 'https://github.com/NavaneethMaruthi/FreelanceFlow' },
-      ],
-    },
+  icon: '💼',
+  title: 'FreelanceFlow',
+  badge: '✦ Full Stack SPA',
+  desc: 'Backend-heavy SPA focused on <strong>data modeling and scale</strong> — designed a normalized <strong>4-collection MongoDB schema</strong> handling 50+ users, 300+ projects, and 700+ timesheet entries. Architected real-time notifications, REST API layer with JWT auth, and efficient query patterns to minimize database round trips.',
+  tech: ['JavaScript ES6', 'Node.js', 'Express', 'MongoDB', 'REST APIs', 'JWT'],
+  links: [
+    { label: '⌥ GitHub', url: 'https://github.com/NavaneethMaruthi/FreelanceFlow' },
+  ],
+},
     {
       icon: '🔬',
       title: 'Wisconsin Breast Cancer Diagnosis',
@@ -201,7 +172,7 @@ const RESUME_DATA = {
   /* ── CONTACT ── */
   contact: {
     heading: 'Contact Me',
-    subtext: 'Let\'s talk.',
+    subtext: 'I bring <strong>2+ years of production experience</strong> in data pipelines and full-stack engineering, currently pursuing my MS at Northeastern.',
     links: [
       { icon: '<i class="fa-regular fa-envelope"></i>', label: 'Email',    value: 'maruthi.n@northeastern.edu',  url: 'mailto:maruthi.n@northeastern.edu' },
       { icon: '<i class="fa-brands fa-linkedin"></i>',  label: 'LinkedIn', value: 'linkedin.com/in/navaneethm32', url: 'https://www.linkedin.com/in/navaneethm32' },

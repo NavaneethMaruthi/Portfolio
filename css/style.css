@@ -297,10 +297,7 @@ button {
 }
 
 .hero-title {
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
 }
 
 .hero-title .highlight {
@@ -374,24 +371,22 @@ button {
 }
 
 .photo-wrap {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 2px dashed var(--accent);
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.25rem;
   overflow: hidden;
   background: rgba(108, 99, 255, 0.08);
-  font-size: 2.5rem;
 }
 
 .photo-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .hero-card-name {
@@ -1038,7 +1033,10 @@ button {
 .accent {
   color: var(--accent2);
 }
-
+.photo-wrap {
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.4);
+}
 .btn-resume {
   background: transparent;
   color: var(--green);
@@ -1057,3 +1055,46 @@ button {
   background: rgba(0, 255, 136, 0.1);
   transform: translateY(-2px);
 }
+/* ── SCROLL INDICATOR ── */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+  animation: fadeIn 1.5s ease 1s both;
+}
+
+.scroll-arrow {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.scroll-arrow i {
+  font-size: 0.75rem;
+  color: var(--accent2);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+.section--hero {
+  padding-top: 64px;
+  position: relative;
+}
+
