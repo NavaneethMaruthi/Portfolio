@@ -36,6 +36,7 @@
 
     function drawParticles() {
       ctx.clearRect(0, 0, W, H);
+      frameCount++;
 
       /* Draw dots */
       particles.forEach((p) => {
@@ -51,20 +52,22 @@
         ctx.fill();
       });
 
-      /* Draw connecting lines between nearby particles */
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
+      /* Only recalculate connections every 3 frames */
+      if (frameCount % 3 === 0) {
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 120) {
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(108, 99, 255, ${0.15 * (1 - dist / 120)})`;
-            ctx.lineWidth = 0.5;
-            ctx.stroke();
+            if (dist < 120) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(108, 99, 255, ${0.15 * (1 - dist / 120)})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
           }
         }
       }
@@ -75,9 +78,11 @@
     resize();
     window.addEventListener('resize', resize);
 
-    for (let i = 0; i < 80; i++) {
+    for (let i = 0; i < 50; i++) {
       particles.push(makeParticle());
     }
+
+    let frameCount = 0;
 
     drawParticles();
   }

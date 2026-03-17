@@ -58,9 +58,12 @@
           <div class="hero-chips">${chipsHTML}</div>
 
           <div class="hero-btns">
-            <a href="#projects" class="btn-primary">View My Work</a>
-            <a href="#contact"  class="btn-secondary">Let's Connect</a>
-          </div>
+  <a href="#projects" class="btn-primary">View My Work</a>
+  <a href="#contact" class="btn-secondary">Let's Connect</a>
+  <a href="${personal.resume}" download class="btn-resume">
+    <i class="fa-solid fa-download"></i> Resume
+  </a>
+</div>
         </div>
 
         <!-- RIGHT: Info card -->

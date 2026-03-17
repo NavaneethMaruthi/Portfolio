@@ -11,9 +11,7 @@
   const { about } = RESUME_DATA;
 
   /* ── Build paragraphs ── */
-  const parasHTML = about.paragraphs
-    .map((p) => `<p>${p}</p>`)
-    .join('');
+  const parasHTML = about.paragraphs.map((p) => `<p>${p}</p>`).join('');
 
   /* ── Build skills grid ── */
   const skillsHTML = about.skills

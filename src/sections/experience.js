@@ -12,38 +12,36 @@
 
   /* ── Build each timeline item ── */
   const timelineHTML = experience
-    .map(
-      (item) => {
-        /* Dot style variant */
-        const dotClass = item.dotStyle === 'cyan'
+    .map((item) => {
+      /* Dot style variant */
+      const dotClass =
+        item.dotStyle === 'cyan'
           ? 'tl-dot tl-dot--cyan'
           : item.dotStyle === 'red'
             ? 'tl-dot tl-dot--red'
             : 'tl-dot';
 
-        /* Bullet points */
-        const bulletsHTML = item.bullets
-          .map((b) => `<li>${b}</li>`)
-          .join('');
+      /* Bullet points */
+      const bulletsHTML = item.bullets.map((b) => `<li>${b}</li>`).join('');
 
-        /* Tech tags — skip if empty */
-        const techHTML = item.tech.length
-          ? `<div class="tl-tech">
+      /* Tech tags — skip if empty */
+      const techHTML = item.tech.length
+        ? `<div class="tl-tech">
                ${item.tech.map((t) => `<span>${t}</span>`).join('')}
              </div>`
-          : '';
+        : '';
 
-        /* Date badge color override for education */
-        const dateStyle = item.dotStyle === 'red'
+      /* Date badge color override for education */
+      const dateStyle =
+        item.dotStyle === 'red'
           ? 'style="color:#ff6b6b; border-color:rgba(255,107,107,.3); background:rgba(255,107,107,.1);"'
           : '';
 
-        /* Company color override for education */
-        const companyStyle = item.dotStyle === 'red'
-          ? 'style="color:#ff6b6b;"'
-          : '';
+      /* Company color override for education */
+      const companyStyle =
+        item.dotStyle === 'red' ? 'style="color:#ff6b6b;"' : '';
 
-        return `
+      return `
           <div class="tl-item reveal">
             <div class="${dotClass}"></div>
             <div class="tl-card">
@@ -59,8 +57,7 @@
               ${techHTML}
             </div>
           </div>`;
-      }
-    )
+    })
     .join('');
 
   /* ── Full experience HTML ── */

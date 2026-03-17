@@ -7,22 +7,22 @@
 /* ── 1. CSS VARIABLES (Design Tokens) ── */
 :root {
   /* Backgrounds */
-  --bg:        #0a0a0f;
-  --bg-alt:    #0f0f1a;
-  --bg-card:   #161625;
-  --bg-input:  #13131f;
+  --bg: #0a0a0f;
+  --bg-alt: #0f0f1a;
+  --bg-card: #161625;
+  --bg-input: #13131f;
 
   /* Borders */
-  --border:    #1e1e35;
+  --border: #1e1e35;
 
   /* Brand Colors */
-  --accent:    #6c63ff;
-  --accent2:   #00d4ff;
-  --green:     #00ff88;
+  --accent: #6c63ff;
+  --accent2: #00d4ff;
+  --green: #00ff88;
 
   /* Text */
-  --text:      #e8e8f0;
-  --muted:     #7a7a9a;
+  --text: #e8e8f0;
+  --muted: #7a7a9a;
 
   /* Typography */
   --font-sans: 'Inter', sans-serif;
@@ -30,12 +30,12 @@
 
   /* Spacing */
   --section-pad: 7rem 5%;
-  --max-width:   1200px;
+  --max-width: 1200px;
 
   /* Radius */
-  --radius-sm:  6px;
-  --radius-md:  10px;
-  --radius-lg:  14px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
 
   /* Transitions */
   --transition: 0.25s ease;
@@ -86,9 +86,16 @@ button {
 }
 
 /* ── 3. SCROLLBAR ── */
-::-webkit-scrollbar        { width: 5px; }
-::-webkit-scrollbar-track  { background: var(--bg); }
-::-webkit-scrollbar-thumb  { background: var(--accent); border-radius: 3px; }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
 
 /* ── 4. SELECTION ── */
 ::selection {
@@ -143,9 +150,13 @@ button {
   transition: opacity var(--transition);
 }
 
-.logo:hover { opacity: 0.8; }
+.logo:hover {
+  opacity: 0.8;
+}
 
-.logo span { color: var(--accent2); }
+.logo span {
+  color: var(--accent2);
+}
 
 .nav-links {
   display: flex;
@@ -184,21 +195,6 @@ button {
   width: 100%;
 }
 
-.nav-cta {
-  background: var(--accent);
-  color: #fff;
-  padding: 0.5rem 1.25rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition: background var(--transition), transform var(--transition);
-}
-
-.nav-cta:hover {
-  background: #5a52e0;
-  transform: translateY(-1px);
-}
-
 /* Hamburger (hidden on desktop, shown on mobile via responsive.css) */
 .nav-toggle {
   display: none;
@@ -215,7 +211,9 @@ button {
   height: 2px;
   background: var(--text);
   border-radius: 2px;
-  transition: transform var(--transition), opacity var(--transition);
+  transition:
+    transform var(--transition),
+    opacity var(--transition);
 }
 
 /* ── 7. SECTION BASE ── */
@@ -320,7 +318,9 @@ button {
   max-width: 520px;
 }
 
-.hero-sub strong { color: var(--text); }
+.hero-sub strong {
+  color: var(--text);
+}
 
 .hero-chips {
   display: flex;
@@ -458,7 +458,9 @@ button {
   border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 0.9rem;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
   display: inline-block;
 }
 
@@ -475,7 +477,10 @@ button {
   font-weight: 600;
   font-size: 0.9rem;
   border: 1px solid var(--border);
-  transition: border-color var(--transition), color var(--transition), transform var(--transition);
+  transition:
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
   display: inline-block;
 }
 
@@ -500,7 +505,9 @@ button {
   font-size: 0.95rem;
 }
 
-.about-text strong { color: var(--text); }
+.about-text strong {
+  color: var(--text);
+}
 
 .skills-grid {
   display: grid;
@@ -552,7 +559,9 @@ button {
   border-left: 3px solid var(--accent);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
-  transition: border-color var(--transition), transform var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
 }
 
 .highlight-card:hover {
@@ -590,7 +599,12 @@ button {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, var(--accent), var(--accent2), transparent);
+  background: linear-gradient(
+    180deg,
+    var(--accent),
+    var(--accent2),
+    transparent
+  );
 }
 
 .tl-item {
@@ -625,7 +639,9 @@ button {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
-  transition: border-color var(--transition), box-shadow var(--transition);
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
 }
 
 .tl-card:hover {
@@ -693,7 +709,9 @@ button {
   font-size: 0.85rem;
 }
 
-.tl-bullets li strong { color: var(--text); }
+.tl-bullets li strong {
+  color: var(--text);
+}
 
 .tl-tech {
   display: flex;
@@ -728,7 +746,10 @@ button {
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
 }
 
 .proj-card::before {
@@ -761,7 +782,9 @@ button {
   margin-bottom: 1rem;
 }
 
-.proj-icon { font-size: 1.75rem; }
+.proj-icon {
+  font-size: 1.75rem;
+}
 
 .proj-links {
   display: flex;
@@ -774,7 +797,9 @@ button {
   border: 1px solid var(--border);
   padding: 0.3rem 0.7rem;
   border-radius: var(--radius-sm);
-  transition: color var(--transition), border-color var(--transition);
+  transition:
+    color var(--transition),
+    border-color var(--transition);
   display: flex;
   align-items: center;
   gap: 0.3rem;
@@ -863,7 +888,9 @@ button {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
-  transition: border-color var(--transition), transform var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
 }
 
 .c-link:hover {
@@ -930,7 +957,9 @@ button {
   font-size: 0.9rem;
   font-family: var(--font-sans);
   outline: none;
-  transition: border-color var(--transition), box-shadow var(--transition);
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
 }
 
 .form-group input:focus,
@@ -954,7 +983,9 @@ button {
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
 }
 
 .form-btn:hover {
@@ -985,7 +1016,9 @@ button {
   margin-bottom: 0.4rem;
 }
 
-.footer-logo span { color: var(--accent2); }
+.footer-logo span {
+  color: var(--accent2);
+}
 
 #footer p {
   color: var(--muted);
@@ -1002,4 +1035,25 @@ button {
   opacity: 0.5;
 }
 
-.accent { color: var(--accent2); }
+.accent {
+  color: var(--accent2);
+}
+
+.btn-resume {
+  background: transparent;
+  color: var(--green);
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid var(--green);
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-resume:hover {
+  background: rgba(0, 255, 136, 0.1);
+  transform: translateY(-2px);
+}

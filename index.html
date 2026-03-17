@@ -1,115 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Navaneeth Maruthi — Software & Data Engineer. MS CS at Northeastern." />
-  <meta name="author" content="Navaneeth Maruthi" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Navaneeth Maruthi — Software & Data Engineer. MS CS at Northeastern."
+    />
+    <meta name="author" content="Navaneeth Maruthi" />
 
-  <!-- Open Graph (LinkedIn / Slack previews) -->
-  <meta property="og:title" content="Navaneeth Maruthi | Software & Data Engineer" />
-  <meta property="og:description" content="2+ years building scalable web apps and data pipelines. React, Node.js, Apache Spark, Snowflake, AWS." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://navaneethmaruthi.github.io" />
-  <!-- Replace with real image path once you have one -->
-  <meta property="og:image" content="assets/img/og-preview.png" />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <!-- Open Graph (LinkedIn / Slack previews) -->
+    <meta
+      property="og:title"
+      content="Navaneeth Maruthi | Software & Data Engineer"
+    />
+    <meta
+      property="og:description"
+      content="2+ years building scalable web apps and data pipelines. React, Node.js, Apache Spark, Snowflake, AWS."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://navaneethmaruthi.github.io" />
+    <!-- Replace with real image path once you have one -->
+    <meta property="og:image" content="assets/img/og-preview.png" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 
-  <title>Navaneeth Maruthi | Software & Data Engineer</title>
+    <title>Navaneeth Maruthi | Software & Data Engineer</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheets (order matters) -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-</head>
-<body>
-
-  <!-- ============================================================
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Stylesheets (order matters) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ============================================================
        CANVAS — particle background (drawn by main.js)
   ============================================================ -->
-  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-  <!-- ============================================================
+    <!-- ============================================================
        NAVIGATION
   ============================================================ -->
-  <nav id="navbar" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="#home" class="logo" aria-label="Go to top">nav<span>.</span>dev</a>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="#home" class="logo" aria-label="Go to top"
+          >nav<span>.</span>dev</a
+        >
 
-      <!-- Hamburger (mobile) -->
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+        <!-- Hamburger (mobile) -->
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
 
-      <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="#home"       class="nav-link">Home</a></li>
-        <li><a href="#about"      class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects"   class="nav-link">Projects</a></li>
-        <li><a href="#contact"    class="nav-link">Contact</a></li>
-      </ul>
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-      <a href="mailto:maruthi.n@northeastern.edu" class="nav-cta">Hire Me</a>
-    </div>
-  </nav>
-
-  <!-- ============================================================
+    <!-- ============================================================
        MAIN CONTENT
   ============================================================ -->
-  <main id="main-content">
+    <main id="main-content">
+      <!-- HERO -->
+      <section
+        id="home"
+        class="section section--hero"
+        aria-label="Introduction"
+      >
+        <!-- Rendered by src/sections/hero.js -->
+      </section>
 
-    <!-- HERO -->
-    <section id="home" class="section section--hero" aria-label="Introduction">
-      <!-- Rendered by src/sections/hero.js -->
-    </section>
+      <!-- ABOUT -->
+      <section id="about" class="section section--alt" aria-label="About me">
+        <!-- Rendered by src/sections/about.js -->
+      </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section section--alt" aria-label="About me">
-      <!-- Rendered by src/sections/about.js -->
-    </section>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section" aria-label="Work experience">
+        <!-- Rendered by src/sections/experience.js -->
+      </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section" aria-label="Work experience">
-      <!-- Rendered by src/sections/experience.js -->
-    </section>
+      <!-- PROJECTS -->
+      <section id="projects" class="section section--alt" aria-label="Projects">
+        <!-- Rendered by src/sections/projects.js -->
+      </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section section--alt" aria-label="Projects">
-      <!-- Rendered by src/sections/projects.js -->
-    </section>
+      <!-- CONTACT -->
+      <section id="contact" class="section" aria-label="Contact">
+        <!-- Rendered by src/sections/contact.js -->
+      </section>
+    </main>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section" aria-label="Contact">
-      <!-- Rendered by src/sections/contact.js -->
-    </section>
-
-  </main>
-
-  <!-- ============================================================
+    <!-- ============================================================
        FOOTER
   ============================================================ -->
-  <footer id="footer" role="contentinfo">
-    <div class="footer-inner">
-      <p class="footer-logo">nav<span>.</span>dev</p>
-      <p>Designed &amp; built by <span class="accent">Navaneeth Maruthi</span> &mdash; MS CS @ Northeastern &mdash; Boston, MA</p>
-      <p class="footer-sub"> maruthi.n@northeastern.edu</p>
-      <p class="footer-copy">&copy; <span id="footer-year"></span> Navaneeth Maruthi. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer id="footer" role="contentinfo">
+      <div class="footer-inner">
+        <p class="footer-logo">nav<span>.</span>dev</p>
+        <p>
+          Designed &amp; built by
+          <span class="accent">Navaneeth Maruthi</span> &mdash; MS CS @
+          Northeastern &mdash; Boston, MA
+        </p>
+        <p class="footer-sub">maruthi.n@northeastern.edu</p>
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Navaneeth Maruthi. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
 
-  <!-- SCRIPTS -->
-  <script src="src/utils/data.js"></script>
-  <script src="src/sections/hero.js"></script>
-  <script src="src/sections/about.js"></script>
-  <script src="src/sections/experience.js"></script>
-  <script src="src/sections/projects.js"></script>
-  <script src="src/sections/contact.js"></script>
-  <script src="src/main.js"></script>
-
-</body>
+    <!-- SCRIPTS -->
+    <script src="src/utils/data.js"></script>
+    <script src="src/sections/hero.js"></script>
+    <script src="src/sections/about.js"></script>
+    <script src="src/sections/experience.js"></script>
+    <script src="src/sections/projects.js"></script>
+    <script src="src/sections/contact.js"></script>
+    <script src="src/main.js"></script>
+  </body>
 </html>

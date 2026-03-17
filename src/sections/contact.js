@@ -93,31 +93,54 @@
   const btn = document.getElementById('form-submit');
   const note = document.getElementById('form-note');
 
-  btn.addEventListener('click', function () {
-    const name    = document.getElementById('contact-name').value.trim();
-    const email   = document.getElementById('contact-email').value.trim();
-    const subject = document.getElementById('contact-subject').value.trim();
-    const message = document.getElementById('contact-message').value.trim();
+  btn.addEventListener('click', async function () {
+  const name    = document.getElementById('contact-name').value.trim();
+  const email   = document.getElementById('contact-email').value.trim();
+  const subject = document.getElementById('contact-subject').value.trim();
+  const message = document.getElementById('contact-message').value.trim();
 
-    /* Basic validation */
-    if (!name || !email || !subject || !message) {
-      note.textContent = '⚠️ Please fill in all fields before sending.';
-      note.style.color = '#ff6b6b';
-      return;
+  /* Basic validation */
+  if (!name || !email || !subject || !message) {
+    note.textContent = '⚠️ Please fill in all fields before sending.';
+    note.style.color = '#ff6b6b';
+    return;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    note.textContent = '⚠️ Please enter a valid email address.';
+    note.style.color = '#ff6b6b';
+    return;
+  }
+
+  /* Disable button while sending */
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch('https://formspree.io/f/mpqyooee', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, subject, message }),
+    });
+
+    if (res.ok) {
+      note.textContent = '✅ Message sent! I\'ll get back to you soon.';
+      note.style.color = '#00ff88';
+      /* Clear form */
+      document.getElementById('contact-name').value = '';
+      document.getElementById('contact-email').value = '';
+      document.getElementById('contact-subject').value = '';
+      document.getElementById('contact-message').value = '';
+      btn.textContent = 'Message Sent ✓';
+    } else {
+      throw new Error('Form submission failed');
     }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      note.textContent = '⚠️ Please enter a valid email address.';
-      note.style.color = '#ff6b6b';
-      return;
-    }
-
-    /* Build mailto link and open email client */
-    const mailto = `mailto:${personal.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi Navaneeth,\n\n${message}\n\nFrom: ${name}\nEmail: ${email}`)}`;
-    window.location.href = mailto;
-
-    note.textContent = '✅ Opening your email client...';
-    note.style.color = '#00ff88';
-  });
+  } catch (err) {
+    note.textContent = '❌ Something went wrong. Please email me directly.';
+    note.style.color = '#ff6b6b';
+    btn.textContent = 'Send Message →';
+    btn.disabled = false;
+  }
+});
 })();

@@ -12,24 +12,21 @@
 
   /* ── Build each project card ── */
   const cardsHTML = projects
-    .map(
-      (proj) => {
-        /* Project links */
-        const linksHTML = proj.links
-          .map(
-            (link) =>
-              `<a href="${link.url}" target="_blank" rel="noopener noreferrer" class="proj-link">
+    .map((proj) => {
+      /* Project links */
+      const linksHTML = proj.links
+        .map(
+          (link) =>
+            `<a href="${link.url}" target="_blank" rel="noopener noreferrer" class="proj-link">
                 ${link.label}
               </a>`
-          )
-          .join('');
+        )
+        .join('');
 
-        /* Tech tags */
-        const techHTML = proj.tech
-          .map((t) => `<span>${t}</span>`)
-          .join('');
+      /* Tech tags */
+      const techHTML = proj.tech.map((t) => `<span>${t}</span>`).join('');
 
-        return `
+      return `
           <div class="proj-card reveal">
             <div class="proj-top">
               <div class="proj-icon">${proj.icon}</div>
@@ -40,8 +37,7 @@
             <p>${proj.desc}</p>
             <div class="proj-tech">${techHTML}</div>
           </div>`;
-      }
-    )
+    })
     .join('');
 
   /* ── Full projects HTML ── */

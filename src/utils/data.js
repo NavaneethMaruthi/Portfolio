@@ -18,10 +18,10 @@ const RESUME_DATA = {
     university: 'Northeastern University',
     degree: 'MS in Computer Science',
     graduationYear: 'May 2027',
-    photo: 'assets/img/profile.jpg', // replace with real photo path
+    photo: 'assets/img/profile.jpg',
     linkedin: 'https://www.linkedin.com/in/navaneethm32',
     github: 'https://github.com/NavaneethMaruthi',
-    resume: '#', // replace with link to your resume PDF
+    resume: 'assets/Navaneeth_Maruthi_Resume.pdf',
     available: true,
   },
 
@@ -30,47 +30,54 @@ const RESUME_DATA = {
     intro: 'Hi, I\'m',
     highlight: 'Navaneeth Maruthi',
     subtitle:
-      'Software & Data Engineer with <strong>2+ years</strong> building scalable web apps and high-throughput data pipelines. I bridge the gap between <strong>full-stack product engineering</strong> and <strong>data infrastructure</strong> — from React UIs to Spark ETL on AWS.',
+      'Software & Data Engineer with <strong>2+ years</strong> shipping production-grade web apps and data pipelines at Cognizant. Proven ability to own features end-to-end — React frontend to Node.js backend to cloud-deployed infrastructure on AWS. Experienced in <strong>high-throughput ETL</strong> (Spark, Snowflake), <strong>serverless distributed systems</strong> (SNS, SQS, Lambda), and <strong>modern full-stack development</strong> (REST APIs, JWT, MongoDB).',
     chips: [
-      { label: 'Apache Spark', type: 'purple' },
-      { label: 'Snowflake',    type: 'purple' },
-      { label: 'React.js',     type: 'cyan'   },
-      { label: 'Node.js',      type: 'cyan'   },
-      { label: 'AWS',          type: 'purple' },
-      { label: 'Python',       type: 'purple' },
-      { label: 'ETL Pipelines',type: 'cyan'   },
-      { label: 'Kubernetes',   type: 'purple' },
+      { label: 'Apache Spark',  type: 'purple' },
+      { label: 'Snowflake',     type: 'purple' },
+      { label: 'React.js',      type: 'cyan'   },
+      { label: 'Node.js',       type: 'cyan'   },
+      { label: 'AWS',           type: 'purple' },
+      { label: 'Python',        type: 'purple' },
+      { label: 'ETL Pipelines', type: 'cyan'   },
+      { label: 'Kubernetes',    type: 'purple' },
     ],
     stats: [
-      { num: '2+', label: 'Yrs Experience' },
-      { num: '3',  label: 'Live Projects'  },
-      { num: '10+',label: 'Technologies'   },
-    ],
+  { num: '2+',   label: 'Yrs Experience'  },
+  { num: '100+', label: 'Code Reviews Led' },
+  { num: '40%',  label: 'Faster Config'   },
+],
   },
 
   /* ── ABOUT ── */
   about: {
     paragraphs: [
-      'I\'m a <strong>Computer Science graduate student at Northeastern University</strong> (MS, expected May 2027) with a solid foundation in both software engineering and data systems. My 2+ years at Cognizant taught me how to ship production code that <em>actually scales</em>.',
-      'I specialize in two intersecting domains: <strong>building full-stack web applications</strong> (React → Node.js → cloud) and <strong>engineering robust data pipelines</strong> (Spark, Snowflake, AWS). This dual expertise makes me effective at companies where data and product teams need to move fast together.',
-      'Outside of work, I build side projects, mentor peers through code reviews, and obsess over clean system design. I\'m actively targeting <strong>Data Engineer</strong> and <strong>Full Stack Engineer</strong> roles in the US.',
-    ],
+  'Software engineer with <strong>2+ years</strong> shipping production-grade web apps and data pipelines at Cognizant. I own features end-to-end — React frontend, Node.js backend, cloud infrastructure on AWS — without handing off.',
+  'Most recently architected an async distributed system on AWS evolving a sync API into a serverless event-driven pipeline using <strong>SNS, SQS, Lambda and Terraform</strong> — achieving <strong>614x throughput improvement</strong> in benchmarks. I\'m equally at home writing Spark ETL jobs and shipping React UIs.',
+],
     skills: [
       {
-        category: 'Data & Cloud',
-        tags: ['Apache Spark', 'Snowflake', 'Hive', 'AWS S3/ECS', 'Kafka', 'Terraform', 'GCP'],
+        category: 'Languages',
+        tags: ['Python', 'JavaScript ES6', 'Java', 'Go', 'SQL', 'C++', 'C#'],
       },
       {
         category: 'Frontend',
-        tags: ['React.js', 'Angular', 'HTML5', 'CSS3', 'JavaScript ES6'],
+        tags: ['React.js', 'Angular', 'HTML5', 'CSS3'],
       },
       {
         category: 'Backend & APIs',
-        tags: ['Node.js', 'Spring Boot', 'REST APIs', 'Express.js', 'JWT Auth'],
+        tags: ['Node.js', 'Spring Boot', 'REST APIs', 'Express.js', 'JWT Auth', 'OpenAPI/Swagger'],
       },
       {
-        category: 'DevOps & Databases',
-        tags: ['Docker', 'Kubernetes', 'PostgreSQL', 'MongoDB', 'MySQL', 'CI/CD'],
+        category: 'Data & Cloud',
+        tags: ['Apache Spark', 'Snowflake', 'Hive', 'Kafka', 'AWS Lambda', 'SNS/SQS', 'DynamoDB', 'AWS S3/ECS/ECR', 'AWS Bedrock', 'Terraform', 'GCP', 'CloudWatch'],
+      },
+      {
+        category: 'Databases',
+        tags: ['PostgreSQL', 'MongoDB', 'MySQL', 'Snowflake', 'Hive', 'NoSQL'],
+      },
+      {
+        category: 'DevOps & Tools',
+        tags: ['Docker', 'Kubernetes', 'CI/CD', 'Git', 'Maven', 'Agile/Scrum', 'Claude Code'],
       },
     ],
     highlights: [
@@ -91,8 +98,13 @@ const RESUME_DATA = {
       },
       {
         icon: '🧠',
-        title: 'ML-Curious Engineer',
-        desc: 'Built and tuned ML models achieving 98.25% accuracy and 0.997 AUC on medical datasets using scikit-learn with GridSearch optimization.',
+        title: 'ML & Algorithms',
+        desc: 'Built ML models (Random Forest, KNN, Neural Networks) achieving 98.25% accuracy. Implemented Apriori, hierarchical clustering, and gradient descent from scratch.',
+      },
+      {
+        icon: '🏆',
+        title: 'JPMorgan Chase Software Engineering Simulation',
+        desc: 'Completed Forage simulation covering financial software engineering practices — Feb 2026.',
       },
     ],
   },
@@ -111,6 +123,7 @@ const RESUME_DATA = {
         'Designed a <strong>3-stage data validation architecture</strong> (structural → semantic → provisioning) ensuring end-to-end data integrity before analytical loading.',
         'Developed <strong>reusable Angular UI components</strong> integrated with REST APIs, improving front-end consistency and cutting new feature dev time across the team.',
         'Led <strong>100+ code reviews</strong> across 8 engineers in Agile/Scrum sprints, reducing defect escape rate and ensuring on-time delivery.',
+        'Built <strong>Apache Kafka</strong>-based event streaming integrations to decouple data ingestion from downstream consumers, improving pipeline resilience.',
       ],
       tech: ['Apache Spark', 'Snowflake', 'AWS S3', 'Angular', 'REST APIs', 'Swagger', 'Agile'],
     },
@@ -133,8 +146,19 @@ const RESUME_DATA = {
       period: 'Expected May 2027',
       dotStyle: 'red',
       bullets: [
-        'Graduate-level coursework in <strong>distributed systems, databases, algorithms</strong>, and full-stack web development.',
+        'Graduate-level coursework in <strong>Algorithms, Database Management Systems, Web Development, Building Scalable Distributed Systems, Programming Design Paradigm, Machine Learning, Data Mining Techniques</strong>.',
         'Building projects across ML, data engineering, and full-stack web apps to round out industry experience.',
+      ],
+      tech: [],
+    },
+    {
+      company: 'Visvesvaraya Technological University',
+      role: 'BE in Computer Science and Engineering',
+      location: 'Bangalore, India',
+      period: 'May 2018 – July 2022',
+      dotStyle: 'red',
+      bullets: [
+        'Bachelor\'s degree in Computer Science with focus on <strong>data structures, algorithms, and software engineering</strong>.',
       ],
       tech: [],
     },
@@ -146,7 +170,7 @@ const RESUME_DATA = {
       icon: '🎯',
       title: 'Alignify',
       badge: '✦ Live & Deployed',
-      desc: 'Full-stack goal-planning application enabling 50+ users to convert long-term goals into structured daily and weekly action plans. Features JWT authentication, protected routes, and persistent MongoDB storage for a complete end-to-end user workflow.',
+      desc: 'Full-stack goal-planning application enabling 50+ users to convert long-term goals into structured daily and weekly action plans. Features JWT authentication, protected routes, persistent MongoDB storage, and <strong>WCAG-compliant accessible design</strong> validated via Lighthouse audits. Containerized with Docker and deployed on Render.',
       tech: ['React.js', 'Node.js', 'Express', 'MongoDB Atlas', 'JWT', 'Docker', 'Render'],
       links: [
         { label: '🔗 Live', url: 'https://alignify-6va4.onrender.com' },
@@ -165,22 +189,23 @@ const RESUME_DATA = {
     {
       icon: '🔬',
       title: 'Wisconsin Breast Cancer Diagnosis',
-      badge: '✦ ML · 98.25% Accuracy',
-      desc: 'Trained and compared 4 ML models on the Wisconsin Diagnostic dataset. Achieved 98.25% accuracy and 0.997 AUC via GridSearch tuning — outperforming human radiologist miss rates with a 4.76% false negative rate. Validated via bias-variance analysis.',
-      tech: ['Python', 'scikit-learn', 'GridSearch', 'Random Forest', 'Logistic Regression'],
-      links: [],
+      badge: '✦ Outperforms Human Radiologists',
+      desc: 'Trained and compared 4 ML models on the Wisconsin Diagnostic dataset. Outperformed human radiologist miss rates with a <strong>4.76% false negative rate</strong> — achieving 98.25% accuracy and 0.997 AUC via GridSearch tuning. Validated via bias-variance analysis with clinically meaningful feature alignment.',
+      tech: ['Python', 'scikit-learn', 'GridSearch', 'Random Forest', 'Logistic Regression', 'KNN', 'Decision Tree'],
+      links: [
+        { label: '⌥ GitHub', url: 'https://github.com/NavaneethMaruthi/wisconsin-breast-cancer' },
+      ],
     },
   ],
 
   /* ── CONTACT ── */
   contact: {
     heading: 'Contact Me',
-    subtext:
-      'Let\'s talk.',
+    subtext: 'Let\'s talk.',
     links: [
-      { icon: '✉️', label: 'Email',    value: 'maruthi.n@northeastern.edu', url: 'mailto:maruthi.n@northeastern.edu' },
-      { icon: '💼', label: 'LinkedIn', value: 'LinkedIn', url: 'https://www.linkedin.com/in/navaneethm32' },
-      { icon: '🐙', label: 'GitHub',   value: 'GitHub', url: 'https://github.com/NavaneethMaruthi' },
+      { icon: '<i class="fa-regular fa-envelope"></i>', label: 'Email',    value: 'maruthi.n@northeastern.edu',  url: 'mailto:maruthi.n@northeastern.edu' },
+      { icon: '<i class="fa-brands fa-linkedin"></i>',  label: 'LinkedIn', value: 'linkedin.com/in/navaneethm32', url: 'https://www.linkedin.com/in/navaneethm32' },
+      { icon: '<i class="fa-brands fa-github"></i>',    label: 'GitHub',   value: 'github.com/NavaneethMaruthi', url: 'https://github.com/NavaneethMaruthi' },
     ],
   },
 

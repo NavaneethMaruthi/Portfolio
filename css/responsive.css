@@ -10,7 +10,6 @@
 
 /* ── TABLET (≤ 1024px) ── */
 @media (max-width: 1024px) {
-
   /* Hero */
   .hero-grid {
     grid-template-columns: 1fr;
@@ -45,7 +44,6 @@
 
 /* ── MOBILE LARGE (≤ 768px) ── */
 @media (max-width: 768px) {
-
   /* Nav */
   .nav-links {
     position: fixed;
@@ -62,7 +60,9 @@
     padding: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease, padding 0.35s ease;
+    transition:
+      max-height 0.35s ease,
+      padding 0.35s ease;
   }
 
   .nav-links.open {
@@ -83,10 +83,6 @@
 
   .nav-toggle {
     display: flex;
-  }
-
-  .nav-cta {
-    display: none; /* hide on mobile nav — shown in hero instead */
   }
 
   /* Sections */
@@ -158,7 +154,6 @@
 
 /* ── MOBILE SMALL (≤ 480px) ── */
 @media (max-width: 480px) {
-
   /* Nav */
   .nav-inner {
     padding: 0 1rem;
@@ -232,7 +227,6 @@
 
 /* ── LARGE SCREENS (≥ 1400px) ── */
 @media (min-width: 1400px) {
-
   :root {
     --section-pad: 8rem 5%;
   }
