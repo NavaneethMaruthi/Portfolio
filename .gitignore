@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code (keep settings.json but ignore workspace files)
+.vscode/*.code-workspace
+
+# Environment
+.env
