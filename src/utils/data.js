@@ -50,7 +50,7 @@ const RESUME_DATA = {
   /* ── ABOUT ── */
   about: {
     paragraphs: [
-  'Software engineer with <strong>2+ years</strong> shipping production-grade web apps and data pipelines at Cognizant. I own features end-to-end — React frontend, Node.js backend, cloud infrastructure on AWS — without handing off.',
+  'Software engineer shipping production-grade web apps and data pipelines at Cognizant. I own features end-to-end — React frontend, Node.js backend, cloud infrastructure on AWS — without handing off.',
   'Most recently architected an async distributed system on AWS evolving a sync API into a serverless event-driven pipeline using <strong>SNS, SQS, Lambda and Terraform</strong> — achieving <strong>614x throughput improvement</strong> in benchmarks. I\'m equally at home writing Spark ETL jobs and shipping React UIs.',
 ],
     skills: [
@@ -154,14 +154,14 @@ const RESUME_DATA = {
   desc: 'Backend-heavy SPA focused on <strong>data modeling and scale</strong> — designed a normalized <strong>4-collection MongoDB schema</strong> handling 50+ users, 300+ projects, and 700+ timesheet entries. Architected real-time notifications, REST API layer with JWT auth, and efficient query patterns to minimize database round trips.',
   tech: ['JavaScript ES6', 'Node.js', 'Express', 'MongoDB', 'REST APIs', 'JWT'],
   links: [
-    { label: '⌥ GitHub', url: 'https://github.com/NavaneethMaruthi/FreelanceFlow' },
+    { label: '🔗 Live', url: 'https://freelanceflow-1.onrender.com' },
   ],
 },
     {
       icon: '🔬',
       title: 'Wisconsin Breast Cancer Diagnosis',
       badge: '✦ Outperforms Human Radiologists',
-      desc: 'Trained and compared 4 ML models on the Wisconsin Diagnostic dataset. Outperformed human radiologist miss rates with a <strong>4.76% false negative rate</strong> — achieving 98.25% accuracy and 0.997 AUC via GridSearch tuning. Validated via bias-variance analysis with clinically meaningful feature alignment.',
+desc: 'Engineered an end-to-end ML classification pipeline on the Wisconsin Diagnostic dataset. Evaluated 4 model architectures (Logistic Regression, Random Forest, Decision Tree, KNN), implemented GridSearch hyperparameter tuning, and selected the best model based on AUC and false negative rate — achieving <strong>98.25% accuracy</strong> and outperforming human radiologist miss rates at <strong>4.76% false negatives</strong>.',
       tech: ['Python', 'scikit-learn', 'GridSearch', 'Random Forest', 'Logistic Regression', 'KNN', 'Decision Tree'],
       links: [
         { label: '⌥ GitHub', url: 'https://github.com/NavaneethMaruthi/wisconsin-breast-cancer' },
@@ -172,7 +172,7 @@ const RESUME_DATA = {
   /* ── CONTACT ── */
   contact: {
     heading: 'Contact Me',
-    subtext: 'I bring <strong>2+ years of production experience</strong> in data pipelines and full-stack engineering, currently pursuing my MS at Northeastern.',
+    subtext: 'Seeking <strong>Data Engineer</strong> and <strong>Full Stack Engineer</strong> roles — internship or co-op starting <strong>Summer/Fall 2026</strong>. Based in Boston, MA.',
     links: [
       { icon: '<i class="fa-regular fa-envelope"></i>', label: 'Email',    value: 'maruthi.n@northeastern.edu',  url: 'mailto:maruthi.n@northeastern.edu' },
       { icon: '<i class="fa-brands fa-linkedin"></i>',  label: 'LinkedIn', value: 'linkedin.com/in/navaneethm32', url: 'https://www.linkedin.com/in/navaneethm32' },

@@ -73,7 +73,7 @@ const photoHTML = `
 
             <div class="availability">
               <span class="availability-dot"></span>
-              Open to Opportunities
+              Open to Co-op/Internship Opportunities
             </div>
 
             <div class="stat-row">${statsHTML}</div>
