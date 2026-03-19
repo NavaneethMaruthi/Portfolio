@@ -112,14 +112,12 @@ const RESUME_DATA = {
       period: 'Nov 2022 – Oct 2024',
       dotStyle: 'default',
       bullets: [
-        'Engineered <strong>Apache Spark–based ETL pipelines</strong> to migrate multi-year historical datasets into AWS, powering Snowflake analytical reporting downstream.',
-        'Built a <strong>Swagger-enabled dynamic pipeline config UI</strong>, eliminating hardcoded ingestion logic and cutting new dataset configuration time by ~40%.',
-        'Designed a <strong>3-stage data validation architecture</strong> (structural → semantic → provisioning) ensuring end-to-end data integrity before analytical loading.',
-        'Developed <strong>reusable Angular UI components</strong> integrated with REST APIs, improving front-end consistency and cutting new feature dev time across the team.',
-        'Led <strong>100+ code reviews</strong> across 8 engineers in Agile/Scrum sprints, reducing defect escape rate and ensuring on-time delivery.',
-        'Built <strong>Apache Kafka</strong>-based event streaming integrations to decouple data ingestion from downstream consumers, improving pipeline resilience.',
+        'Architected a production-grade <strong>distributed data processing system</strong> migrating 10+ years of historical enterprise data across a 4-zone pipeline architecture (Confirmed → Semantic → Provisioning → Refined), enforcing correctness guarantees and semantic consistency at each stage transition.',
+        'Designed a <strong>REST API-driven orchestration system</strong> via a Swagger-enabled interface, enabling dynamic configuration and reusable pipeline registration — eliminating hardcoded logic and reducing new data source onboarding time.',
+        'Built a <strong>fault-tolerant storage layer on AWS S3</strong> under Control-M orchestration with high availability across distributed workflows; validated end-to-end system correctness using Prana testing framework and AWS Athena pre- and post-migration.',
+        'Delivered <strong>Snowflake as the analytical serving layer</strong>, enforcing schema contracts and data quality standards consumed by enterprise reporting pipelines and downstream analytics teams.',
       ],
-      tech: ['Apache Spark', 'Snowflake', 'AWS S3', 'Angular', 'REST APIs', 'Swagger', 'Agile'],
+      tech: ['Apache Spark', 'Snowflake', 'AWS S3', 'AWS Athena', 'Control-M', 'Swagger', 'REST APIs', 'Agile'],
     },
     {
       company: 'Cognizant',
@@ -128,10 +126,9 @@ const RESUME_DATA = {
       period: 'Apr 2022 – Sep 2022',
       dotStyle: 'cyan',
       bullets: [
-        'Built and maintained an <strong>enterprise-grade Spring Boot + Angular SPA</strong> serving 100+ internal users with responsive UI components.',
-        'Implemented <strong>comprehensive unit tests</strong> to reduce regression bugs and maintain code quality in a production-grade application.',
+        'Built and shipped <strong>SPA features for an enterprise internal web application</strong> serving 100+ users using Spring Boot (Java) and Angular, delivering UI components and backend endpoints across Agile sprint cycles with unit test coverage via Java testing frameworks.',
       ],
-      tech: ['Spring Boot', 'Java', 'Angular', 'Unit Testing'],
+      tech: ['Spring Boot', 'Java', 'Angular', 'Unit Testing', 'Agile'],
     },
   ],
 
