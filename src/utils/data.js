@@ -112,12 +112,14 @@ const RESUME_DATA = {
       period: 'Nov 2022 – Oct 2024',
       dotStyle: 'default',
       bullets: [
-        'Architected a production-grade <strong>distributed data processing system</strong> migrating 10+ years of historical enterprise data across a 4-zone pipeline architecture (Confirmed → Semantic → Provisioning → Refined), enforcing correctness guarantees and semantic consistency at each stage transition.',
-        'Designed a <strong>REST API-driven orchestration system</strong> via a Swagger-enabled interface, enabling dynamic configuration and reusable pipeline registration — eliminating hardcoded logic and reducing new data source onboarding time.',
-        'Built a <strong>fault-tolerant storage layer on AWS S3</strong> under Control-M orchestration with high availability across distributed workflows; validated end-to-end system correctness using Prana testing framework and AWS Athena pre- and post-migration.',
-        'Delivered <strong>Snowflake as the analytical serving layer</strong>, enforcing schema contracts and data quality standards consumed by enterprise reporting pipelines and downstream analytics teams.',
+        'Architected a production-grade <strong>Apache Spark</strong> pipeline migrating <strong>10+ years</strong> of historical enterprise data across a <strong>4-zone processing architecture</strong> (Confirmed → Semantic → Provisioning → Refined), enforcing data quality and semantic consistency at each zone transition.',
+        'Designed a <strong>REST API-driven</strong> pipeline registration system via a <strong>Swagger-enabled interface</strong>, enabling dynamic dataset onboarding and reusable pipeline configuration — eliminating hardcoded logic across multiple data domains.',
+        'Refactored a <strong>monolithic data ingestion workflow</strong> into modular, reusable Apache Spark components, decoupling batch processing from on-demand API execution and reducing end-to-end pipeline overhead by <strong>~40%</strong>.',
+        'Migrated <strong>3+ production pipeline configurations</strong> during infrastructure consolidation, handling dataset re-registration, <strong>IAM role</strong> updates, and orchestration reconfiguration under <strong>Control-M</strong> with zero data loss.',
+        'Delivered <strong>Snowflake</strong> as the analytical terminal sink, enforcing schema contracts and data quality standards ensuring reliable consumption by enterprise reporting and downstream analytics teams.',
+        'Built a fault-tolerant <strong>AWS S3</strong> intermediate storage layer validated end-to-end using <strong>Prana</strong> testing framework and <strong>AWS Athena</strong> — ensuring structural integrity and semantic accuracy pre- and post-migration.',
       ],
-      tech: ['Apache Spark', 'Snowflake', 'AWS S3', 'AWS Athena', 'Control-M', 'Swagger', 'REST APIs', 'Agile'],
+      tech: ['Apache Spark', 'Snowflake', 'AWS S3', 'AWS Athena', 'Control-M', 'Swagger', 'REST APIs', 'IAM', 'Prana'],
     },
     {
       company: 'Cognizant',
@@ -126,14 +128,25 @@ const RESUME_DATA = {
       period: 'Apr 2022 – Sep 2022',
       dotStyle: 'cyan',
       bullets: [
-        'Built and shipped <strong>SPA features for an enterprise internal web application</strong> serving 100+ users using Spring Boot (Java) and Angular, delivering UI components and backend endpoints across Agile sprint cycles with unit test coverage via Java testing frameworks.',
+        'Built and shipped <strong>SPA features</strong> for an enterprise internal web application serving <strong>100+ users</strong> using <strong>Spring Boot (Java)</strong> and <strong>Angular</strong>, delivering UI components and backend endpoints across Agile sprint cycles with unit test coverage via Java testing frameworks.',
+        'Integrated <strong>Spring Boot REST APIs</strong> into an existing platform to automate internal issue resolution workflows, reducing monthly support tickets by <strong>30%</strong> and removing manual intervention from recurring operational tasks.',
       ],
-      tech: ['Spring Boot', 'Java', 'Angular', 'Unit Testing', 'Agile'],
+      tech: ['Spring Boot', 'Java', 'Angular', 'REST APIs', 'Unit Testing', 'Agile'],
     },
   ],
 
   /* ── PROJECTS ── */
   projects: [
+    {
+      icon: '📈',
+      title: 'TradeFlow — Distributed FIX Protocol Engine',
+      badge: '✦ Distributed Systems · AWS ECS',
+      desc: 'Engineered the <strong>Order Router</strong> and <strong>cost-aware circuit breaker</strong> in Go for a distributed FIX protocol trading engine, routing orders across <strong>5 AWS SQS queues</strong> by financial impact and tripping when slippage exceeded <strong>$500/min</strong>. Deployed 4 containerized microservices to <strong>AWS ECS Fargate</strong> via Terraform IaC; instrumented CloudWatch for latency and cost tracking, validated throughput under load with Locust.',
+      tech: ['Go', 'AWS SQS', 'AWS ECS Fargate', 'Terraform', 'CloudWatch', 'Locust', 'Docker'],
+      links: [
+        { label: '⌥ GitHub', url: 'https://github.com/Shanaya-1981/tradeflow' },
+      ],
+    },
     {
   icon: '🎯',
   title: 'Alignify',
