@@ -60,7 +60,7 @@ const RESUME_DATA = {
       },
       {
         category: 'Frontend',
-        tags: ['React.js', 'Angular', 'HTML5', 'CSS3'],
+        tags: ['Three.js', 'React.js', 'Angular', 'HTML5', 'CSS3'],
       },
       {
         category: 'Backend & APIs',
@@ -137,6 +137,16 @@ const RESUME_DATA = {
 
   /* ── PROJECTS ── */
   projects: [
+    {
+  icon: '🫀',
+  title: 'BodyMap 3D — Health Symptom Tracker',
+  badge: '✦ Three.js · AI-Powered',
+  desc: 'Built a full-stack <strong>interactive 3D health tracker</strong> where users click directly on a realistic GLTF human body model to log symptoms. Implemented <strong>raycasting-based body region detection</strong> across front and back anatomy, severity color markers (green → mild, red → severe), and <strong>AI-powered health insights</strong> via locally hosted LLaMA 3.2. Features a real-time analytics dashboard with JWT auth and bcrypt password hashing.',
+  tech: ['React', 'Three.js', 'React Three Fiber', 'Node.js', 'MongoDB', 'JWT', 'LLaMA 3.2', 'Ollama'],
+  links: [
+    { label: '⌥ GitHub', url: 'https://github.com/NavaneethMaruthi/Body-Map' },
+  ],
+},
     {
       icon: '📈',
       title: 'TradeFlow — Distributed FIX Protocol Engine',
